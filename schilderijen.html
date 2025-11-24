@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geke Dijkhuis</title>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./style/style.css?v1.0">
+    <link rel="stylesheet" href="./style/formstyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- <link rel="shortcut icon" href="./img/KlokkingIcon.png" type="image/x-icon"> -->
+    <style>
+        :root {
+            --textColor: #000;
+            --textColorDark: #000;
+            --accentColor: #dd3333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a onclick="openMenu();" class="open-menu-btn"><img src="./img/buttonMenu.svg" alt="Menu"></a>
+        <a href="index.html#">
+            <p class="accent">Geke</p>
+            <p>Dijkhuis</p>
+        </a>
+        <ul>
+            <li><a href="./index.html" class="menu-hover">Home</a></li>
+            <li><a href="./schilderijen.html" class="accent">Reli&euml;fschilderijen</a></li>
+            <li><a href="./beelden.html" class="menu-hover">Bronzen beelden</a></li>
+            <li><a href="./monument.html" class="menu-hover">Monumenten</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="home" class="subpage">
+            <div class="bg"></div>
+            <div>
+                <div class="text-center">
+                    <p class="title accent">Geke</p>
+                    <p class="title">Dijkhuis</p>
+                </div>
+                <p>reli&euml;fschilderijen en bronzen beelden</p>
+            </div>
+        </section>
+        <section id="schilderijen">
+            <div class="text-center">
+                <p class="title accent">Reli&euml;fschilderijen</p>
+            </div>
+            <div class="flex-box center">
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/2-luik-geel.jpg" alt="2-luik-geel">
+                    </div>
+                    <p>Tweeluik Geel 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/2 luik 70x100 2.jpeg" alt="2-luik">
+                    </div>
+                    <p>Tweeluik 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/2 luik 70x100.jpeg" alt="2-luik">
+                    </div>
+                    <p>Tweeluik 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/2 luik rood 70x100.jpeg" alt="2-luik-rood">
+                    </div>
+                    <p>Tweeluik Rood 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/abstract 70x100.jpeg" alt="abstract">
+                    </div>
+                    <p>Abstract 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/bergmeer 60x80.jpeg" alt="bergmeer">
+                    </div>
+                    <p>Bergmeer 60&times;80</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/bevlogen 80x120.jpeg" alt="bevlogen">
+                    </div>
+                    <p>Bevlogen 80&times;120</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/beweging 65x80.jpeg" alt="beweging">
+                    </div>
+                    <p>Beweging 65&times;80</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/body-art 70x100.jpeg" alt="Body art">
+                    </div>
+                    <p>Body art 70&times;90</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/kracht 70x100.jpeg" alt="kracht">
+                    </div>
+                    <p>Kracht 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/onderweg 70x100.jpeg" alt="Onderweg">
+                    </div>
+                    <p>Onderweg 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/road 70x100.jpeg" alt="road">
+                    </div>
+                    <p>Road 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/Samen 40x50.jpeg" alt="samen">
+                    </div>
+                    <p>Samen 40&times;50</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/samen-sterk 70x100.jpeg" alt="samen sterk">
+                    </div>
+                    <p>Samen sterk 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/strand 70x100.jpeg" alt="strand">
+                    </div>
+                    <p>Strand 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/trektocht 70x100.jpeg" alt="trektocht">
+                    </div>
+                    <p>Trektocht 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/tulp 60x70.jpeg" alt="tulp">
+                    </div>
+                    <p>Tulp 60&times;70</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/tulpen 70x100.jpeg" alt="tulpen">
+                    </div>
+                    <p>Tulpen 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/vogeltrek 70x100.jpeg" alt="vogeltrek">
+                    </div>
+                    <p>Vogeltrek 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/voor-elkaar-70x100.jpeg" alt="voor elkaar">
+                    </div>
+                    <p>Voor elkaar 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/2 luik 70x100 2.jpeg" alt="2-luik">
+                    </div>
+                    <p>Tweeluik 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/2-luik-lange-jannen.jpg" alt="2-luik-lange-jannen">
+                    </div>
+                    <p>Tweeluik Lange Jannen 120&times;20</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/2-luik-vogels.jpg" alt="2-luik-lange-jannen">
+                    </div>
+                    <p>Tweeluik Vogels 100&times;70</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/bloemen-500x400.jpg" alt="Bloemen">
+                    </div>
+                    <p>Bloemen 100&times;70</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/de-verbeelding-500x400.jpg" alt="de verbeelding">
+                    </div>
+                    <p>De verbeelding 120&times;80</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/explosief-500x400.jpg" alt="explosief">
+                    </div>
+                    <p>Explosief 100&times;70</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/gezichtspunt.jpg" alt="gezichtspunt">
+                    </div>
+                    <p>Gezichtspunt 70&times;100</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/nederlander-500x400.jpg" alt="Nederlander">
+                    </div>
+                    <p>Nederlander 100&times;70</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/muziek-500x400.jpg" alt="muziek">
+                    </div>
+                    <p>Muziek 100&times;70</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/met-elkaar-500x400.jpg" alt="met elkaar">
+                    </div>
+                    <p>Met elkaar 120&times;80</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/in-gesprek.jpg" alt="In gesprek">
+                    </div>
+                    <p>In gesprek 100&times;70</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/vier-elementen.jpg" alt="vier elementen">
+                    </div>
+                    <p>Vier elementen 100&times;160</p>
+                </a>
+                <!-- VIER ELEMENTEN 100*160 OPA GESTUURD -->
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/schilderijen/puur-natuur.jpg" alt="Puur natuur">
+                    </div>
+                    <p>Puur natuur 80&times;120</p>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <a href="mailto:fgdijkhuis@gmail.com"><img src="./img/Visitekaartje.png" alt="Visitekaartje" class="Visitekaartje"></a>
+        </section>
+        <section id="footer">
+            <div>
+                <p><img src="./img/LogoGadSolutionsText.png" alt="Logo GAD Solutions"
+                        style="width: 75px;"></p>
+                <p class="sub">&copy;Copyright <b>Geke Dijkhuis</b></p>
+            </div>
+        </section>
+        <div class="imageFullScreen" id="fullscreenContainer">
+            <div class="bg" onclick="closeFullscreenCard()"></div>
+            <div class="container" id="container">
+                <div class="align-right"><a class="closeBTN" onclick="closeFullscreenCard()">&times;</a></div>
+                <img id="fullScreenImage" src="" alt="fullScreenImage">
+                <p id="fullScreenText"></p>
+            </div>
+        </div>
+    </main>
+    <div class="menu-container">
+        <a onclick="closeMenu();" class="closeMenuBTN">&times;</a>
+        <ul>
+            <li><a href="./index.html" class="menu-hover">Home</a></li>
+            <li><a href="./schilderijen.html" class="accent">Reli&euml;fschilderijen</a></li>
+            <li><a href="./beelden.html" class="menu-hover">Bronzen beelden</a></li>
+            <li><a href="./monument.html" class="menu-hover">Monumenten</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
