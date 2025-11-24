@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geke Dijkhuis</title>
+    <script src="./script/script.js">
+    </script>
+    <link rel="stylesheet" href="./style/style.css?v1.0">
+    <link rel="stylesheet" href="./style/formstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- <link rel="shortcut icon" href="./img/KlokkingIcon.png" type="image/x-icon"> -->
+    <style>
+        :root {
+            --textColor: #000;
+            --textColorDark: #000;
+            --accentColor: #dd3333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a onclick="openMenu();" class="open-menu-btn"><img src="./img/buttonMenu.svg" alt="Menu"></a>
+        <a href="index.html#"><p class="accent">Geke</p><p>Dijkhuis</p></a>
+        <ul>
+            <li><a href="./index.html" class="menu-hover">Home</a></li>
+            <li><a href="./schilderijen.html" class="menu-hover">Reli&euml;fschilderijen</a></li>
+            <li><a href="./beelden.html" class="accent">Bronzen beelden</a></li>
+            <li><a href="./monument.html" class="menu-hover">Monumenten</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="home" class="subpage">
+            <div class="bg"></div>
+            <div>
+                <div class="text-center">
+                    <p class="title accent">Geke</p><p class="title">Dijkhuis</p>
+                </div>
+                <p>reli&euml;fschilderijen en bronzen beelden</p>
+            </div>
+        </section>
+        <section id="schilderijen">
+            <div class="text-center">
+                <p class="title accent">Bronzen beelden</p>
+            </div>
+            <div class="flex-box center">
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/welgezind.jpg" alt="Welgezind">
+                    </div>
+                    <p>Welgezind 33cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/uitbundig.jpg" alt="uitbundig">
+                    </div>
+                    <p>Uitbundig 110cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/tweeeenheid.jpg" alt="twe&euml;enheid">
+                    </div>
+                    <p>Twe&euml;enheid 30cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/torso.jpg" alt="Torso">
+                    </div>
+                    <p>Torso 75cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/spirit-scaled.jpg" alt="Spirit">
+                    </div>
+                    <p>Spirit 70cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/samen-een-scaled.jpg" alt="samen &eacute;&eacute;n">
+                    </div>
+                    <p>Samen &eacute;&eacute;n 64cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/hecht-scaled.jpg" alt="hecht">
+                    </div>
+                    <p>Hecht 53cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/harmonie-scaled.jpg" alt="harmonie">
+                    </div>
+                    <p>Harmonie 32cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/eensgezindheid.jpg" alt="eensgezindheid">
+                    </div>
+                    <p>Eensgezindheid 32cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/behoedsaam.jpg" alt="behoedsaam">
+                    </div>
+                    <p>Behoedzaam 35cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/1-en-1-zijn-één-scaled.jpg" alt="1 en 1 zijn &eacute;&eacute;n">
+                    </div>
+                    <p>1 en 1 zijn &eacute;&eacute;n 56cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/brons-glas-scaled.jpg" alt="Brons glas">
+                    </div>
+                    <p>brons glas 38cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/denkbeeld 28 cm.jpg" alt="Denkbeeld">
+                    </div>
+                    <p>Denkbeeld 28 cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/energiek 32 cm.jpg" alt="Energiek">
+                    </div>
+                    <p>Energiek 32 cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/hechtpaar 2 27 cm.jpg" alt="hechtpaar">
+                    </div>
+                    <p>Hechtpaar 27 cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/ideaal 90 cm.jpg" alt="ideaal">
+                    </div>
+                    <p>Ideaal 90 cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/kordaat 2.jpg" alt="kordaat">
+                    </div>
+                    <p>Kordaat 33cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/mijn engeltje 25 cm.jpg" alt="Mijn engeltje">
+                    </div>
+                    <p>Mijn engeltje 25 cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/ouder en kind 50 cm.jpg" alt="Ouder en kind">
+                    </div>
+                    <p>Ouder en kind 50 cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/Rvs - brons - glas.jpeg" alt="rvs brons glas">
+                    </div>
+                    <p>RVS brons glas 125cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/standvastig 78 cm.jpeg" alt="standvastig">
+                    </div>
+                    <p>Standvastig 78 cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/stap voorwaarts 2.jpeg" alt="stap voorwaarts">
+                    </div>
+                    <p>Stap voorwaarts 29cm</p>
+                </a>
+                <a class="card" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/beelden/Verbonden.jpeg" alt="Verbonden">
+                    </div>
+                    <p>Verbonden 28 cm</p>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <a href="mailto:fgdijkhuis@gmail.com"><img src="./img/Visitekaartje.png" alt="Visitekaartje" class="Visitekaartje"></a>
+        </section>
+        <section id="footer">
+            <div>
+                <p><img src="./img/LogoGadSolutionsText.png" alt="Logo GAD Solutions"
+                        style="width: 75px;"></p>
+                <p class="sub">&copy;Copyright <b>Geke Dijkhuis</b></p>
+            </div>
+        </section>
+        <div class="imageFullScreen" id="fullscreenContainer">
+            <div class="bg" onclick="closeFullscreenCard()"></div>
+            <div class="container" id="container">
+                <div class="align-right"><a class="closeBTN" onclick="closeFullscreenCard()">&times;</a></div>
+                <img id="fullScreenImage" src="" alt="fullScreenImage">
+                <p id="fullScreenText"></p>
+            </div>
+        </div>
+    </main>
+    <div class="menu-container">
+        <a onclick="closeMenu();" class="closeMenuBTN">&times;</a>
+        <ul>
+            <li><a href="./index.html" class="menu-hover">Home</a></li>
+            <li><a href="./schilderijen.html" class="menu-hover">Reli&euml;fschilderijen</a></li>
+            <li><a href="./beelden.html" class="accent">Bronzen beelden</a></li>
+            <li><a href="./monument.html" class="menu-hover">Monumenten</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

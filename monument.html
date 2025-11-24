@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geke Dijkhuis</title>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./style/style.css?v1.0">
+    <link rel="stylesheet" href="./style/formstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- <link rel="shortcut icon" href="./img/KlokkingIcon.png" type="image/x-icon"> -->
+    <style>
+        :root {
+            --textColor: #000;
+            --textColorDark: #000;
+            --accentColor: #dd3333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a onclick="openMenu();" class="open-menu-btn"><img src="./img/buttonMenu.svg" alt="Menu"></a>
+        <a href="index.html#"><p class="accent">Geke</p><p>Dijkhuis</p></a>
+        <ul>
+            <li><a href="#" class="menu-hover">Home</a></li>
+            <li><a href="./schilderijen.html" class="menu-hover">Reli&euml;fschilderijen</a></li>
+            <li><a href="./beelden.html" class="menu-hover">Bronzen beelden</a></li>
+            <li><a href="./monument.html" class="accent">Monumenten</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="home" class="subpage">
+            <div class="bg"></div>
+            <div>
+                <div class="text-center">
+                    <p class="title accent">Geke</p><p class="title">Dijkhuis</p>
+                </div>
+                <p>reli&euml;fschilderijen en bronzen beelden</p>
+            </div>
+        </section>
+        <section id="m1">
+            <p class="title accent">Aaltje kraak</p>
+            <a href="https://maps.app.goo.gl/wWwFyc5tctwDE9HKA" target="_blank">Wilhelminaplein, Hardenberg</a>
+            <div class="flex-box center ">
+                <a class="card full" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/monumenten/AaltjeKraakVoor.jpeg" alt="Aaltje Kraak">
+                    </div>
+                </a>
+                <a class="card full" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/monumenten/AaltjekraakZoom.jpg" alt="Aaltje Kraak">
+                    </div>
+                </a>
+                <a class="card full" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/monumenten/MonumentTekstAaltjeKraak.jpeg" alt="Aaltje Kraak">
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="m2">
+            <p class="title accent">Oorlogsmonument</p>
+            <a href="https://maps.app.goo.gl/zzHxYqE61mntvbpC8" target="_blank">Nieuwe weg 6, Mari&euml;nberg</a>
+            <div class="flex-box center">
+                <a class="card full" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/monumenten/MoederKindVoor.JPG" alt="Treurende moeder en kind">
+                    </div>
+                </a>
+                <a class="card full" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/monumenten/MoederKindZoom.JPG" alt="Treurende moeder en kind">
+                    </div>
+                </a>
+                <a class="card full" onclick="fullscreenCard(this);">
+                    <div class="image">
+                        <img src="./img/monumenten/MonumentTekstMoederMetKind.jpeg" alt="Treurende moeder en kind">
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <a href="mailto:fgdijkhuis@gmail.com"><img src="./img/Visitekaartje.png" alt="Visitekaartje" class="Visitekaartje"></a>
+        </section>
+        <section id="footer">
+            <div>
+                <p><img src="./img/LogoGadSolutionsText.png" alt="Logo GAD Solutions"
+                        style="width: 75px;"></p>
+                <p class="sub">&copy;Copyright <b>Geke Dijkhuis</b></p>
+            </div>
+        </section>
+        <div class="imageFullScreen" id="fullscreenContainer">
+            <div class="bg" onclick="closeFullscreenCard()"></div>
+            <div class="container" id="container">
+                <div class="align-right"><a class="closeBTN" onclick="closeFullscreenCard()">&times;</a></div>
+                <img id="fullScreenImage" src="./" alt="fullScreenImage">
+                <p id="fullScreenText"></p>
+            </div>
+        </div>
+    </main>
+    <div class="menu-container">
+        
+        <a onclick="closeMenu();" class="closeMenuBTN">&times;</a>
+        <ul>
+            <li><a href="#" class="menu-hover">Home</a></li>
+            <li><a href="./schilderijen.html" class="menu-hover">Reli&euml;fschilderijen</a></li>
+            <li><a href="./beelden.html" class="menu-hover">Bronzen beelden</a></li>
+            <li><a href="./monument.html" class="accent">Monumenten</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

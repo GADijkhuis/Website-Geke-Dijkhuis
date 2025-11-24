@@ -1,0 +1,234 @@
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a.errorbtn{
+    color: #fff;
+    font-size: 16pt;
+    margin-right: 20px;
+}
+p.errortext{
+    width: calc(100% - 30px);
+    background-color: #ff0000;
+    color: #FFF;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+/*BTN Container*/
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn-container .btn{
+    width: calc(50% - 29px);
+}
+.btn-container .btn:nth-child(1){
+    margin-right: 10px;
+}
+@media only screen and (max-width:768px){
+    .btn-container .btn{
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 0 !important;
+    }
+}
+
+
+/*Item*/
+.item{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-bottom: 0.5px solid var(--accentColor);
+}
+.item .title{
+    width: calc(100% - 190px);
+    min-width: 200px;
+    padding: 10px;
+    padding-left: 0;
+}
+.item .title p{
+    font-size: 16pt;
+    text-overflow: ellipsis;
+}
+.item .btn{
+    width: 150px;
+}
+.item .btn a, .item .btn input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--accentColor);
+    border-radius: 20px;
+    background-color: #FFF;
+    font-size: 18pt;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+.item .btn a:hover, .item .btn input:hover{
+    background-color: var(--accentColor);
+    color: #fff;
+}
+
+.item .btn.delete{
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    background-color: #FFF;
+}
+.item .btn.delete:hover{
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/*Accordion Panels*/
+.panel {
+    padding: 0;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 0;
+  }
+
+/*Form*/
+form{
+    margin-bottom: 50px;
+}
+.frm-item{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-bottom: 0.5px solid var(--accentColor);
+}
+.frm-lbl{
+    width: calc(40% - 20px);
+    min-width: 200px;
+    padding: 10px;
+    padding-left: 0;
+}
+.frm-lbl label{
+    font-size: 16pt;
+    text-overflow: ellipsis;
+}
+.frm-npt{
+    width: 60%;
+    min-width: 300px;
+}
+.frm-npt input{
+    outline: none !important;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid var(--accentColor);
+    border-radius: 20px;
+    font-size: 18pt;
+    transition: 0.5s;
+}
+.frm-npt textarea{
+    outline: none !important;
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    min-width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid var(--accentColor);
+    border-radius: 20px;
+    font-size: 18pt;
+    transition: 0.5s;
+}
+.frm-npt h4{
+    margin-top: 30px;
+}
+.frm-npt .check{
+    outline: none !important;
+    width: 20px;
+    min-height: 15px;
+    border: 2px solid var(--accentColor);
+    border-radius: 20px;
+    font-size: 18pt;
+    transition: 0.5s;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.frm-npt .checkLbl{
+    font-size: 14pt;
+}
+.frm-npt select{
+    outline: none !important;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 2px solid var(--accentColor);
+    border-radius: 20px;
+    font-size: 18pt;
+    transition: 0.5s;
+    box-sizing:content-box;
+    text-wrap: wrap;
+}
+
+.frm-npt textarea:focus, .frm-npt input:focus, .frm-npt select:focus{
+    outline: none !important;
+    border: 2px solid #2B9CFF;
+}
+
+.frm-ext{
+    display: flex;
+    margin-top: 10px;
+}
+.frm-ext .frm-npt{
+    width: calc(75% - 50px);
+    margin-left: 50px;
+    min-width: 100px;
+}
+.frm-ext .frm-npt.club{
+    margin-left: 5px;
+    min-width: 50px;
+    width: calc(25% - 5px);
+}
+.frm-ext .frm-npt input{
+    font-size: 14pt;
+
+}
+
+.frm-btn{
+    width: 100%;
+}
+
+.frm-btn button{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid var(--accentColor);
+    border-radius: 20px;
+    background-color: #FFF;
+    font-size: 18pt;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.frm-btn button:hover{
+    background-color: var(--accentColor);
+    color: #FFF;
+}
+
+
+@media only screen and (max-width:768px){
+    .frm-npt{
+        width: 100%;
+        min-width: 200px;
+    }
+    .frm-lbl{
+        width: 100%;
+        min-width: 200px;
+    }
+}
