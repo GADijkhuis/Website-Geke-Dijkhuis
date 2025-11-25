@@ -10,6 +10,7 @@ var schilderijen = [
     "met-elkaar-500x400.jpg",
     "muziek-500x400.jpg",
     "nederlander-500x400.jpg",
+    "eendracht-100x100.jpg"
 ];
 var beelden = [
     "1-en-1-zijn-één-scaled.jpg",
