@@ -573,3 +573,10 @@ a img.Visitekaartje{
 #footer .sub{
     margin-top: 0;
 }
+
+#footer a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
